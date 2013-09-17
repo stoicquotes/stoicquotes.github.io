@@ -2,7 +2,7 @@
 	"version":"0.1",
 	"name":"Stoic Quotes",
 	"description":"Stoic quotes for a fulfilling life.",
-	"launch_path":"/index.htm",
+	"launch_path":"/index.html",
 	"appcache_path":"/app.manifest",
 	"icons":{
 		"60":"/icons/icon-60.png",
