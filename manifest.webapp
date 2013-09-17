@@ -1,0 +1,18 @@
+{
+	"version":"0.1",
+	"name":"Stoic Quotes",
+	"description":"Stoic quotes for a fulfilling life.",
+	"launch_path":"/index.htm",
+	"appcache_path":"/app.manifest",
+	"icons":{
+		"60":"/icons/icon-60.png",
+		"128":"/icons/icon-128.png"
+	},
+	"developer":{
+		"name":"Ed Mooney",
+		"url":"http://edmooney.com"
+	},
+	"installs_allowed_from":["*"],
+	"default_locale":"en"
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" manifest="app.manifest">
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" href="icon.png"/><!-- 57 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Stoic Quotes</title>
+
+<link rel="stylesheet" href="css/main.css"/>	
+
+  </head>
+  <body>
+    
+    <div id="wrapper">
+	<nav class="mm">
+		<a href="javascript:void(0);" id="menu" alt="Menu" class="menu-trigger"><img src="img/menu.png"/></a>
+		<ul id="mnav">
+			<li><a href="#" id="mhome">Home</a></li>
+			<li><a href="#favs" id="mfavs">Favorites</a></li>
+			<li><a href="#howto" id="mhowto">How To</a></li>
+			<li><a href="#about" id="mabout">About</a></li>
+		</ul>
+
+        <a href="#favs" id="mheart" alt="Favorite"><img src="img/heart.png"/></a>
+	<h3>Stoic Reminders</h3>
+        <a href="#" id="mreload" alt="AutoReload"><img src="img/reload.png"/></a>
+        <br style="clear:both;"/>
+	  </nav>
+	  
+      <div id="container"> 
+      <div id="content"> 
+     	</div> 
+		
+       </div>
+	   
+      
+    </div>
+	<!--  pages -->
+	<script type="text/template" id="about-temp">
+	<div class="gen">
+	<h3>About</h3>
+	<p>My hope is that this simple site will better assist you in living the life of your dreams.</p>
+	<p>contact: <a href="mailto:ed@wisegrower.com?subject=Stoic%20Reminders">ed@wisegrower.com</a></p>
+	</div>
+	</script>
+
+	<script type="text/template" id="privacy-temp">
+	<div class="gen">
+	<h3>privacy</h3>
+	</div>
+	</script>
+
+	<script type="text/template" id="favs-temp">
+	<div class="gen">
+	<h3>Favs</h3>
+	<% _.each(quotes, function(q){%>
+		<li><%= q %></li>
+	<%});%>
+	</div>
+	</script>
+
+	<script type="text/template" id="howto-temp">
+	<div class="gen">
+	<h3>How To</h3>
+	<p>Add this site to your homescreen</p>
+	<strong>Apple:</strong><br/>
+	<ol>
+	<li>Go to <a href="http://stoic.wisegrower.com">stoic.wisegrower.com</a></li>
+	<li>Tap the Share button (on the bottom middle of the screen on iPhone, at the top on iPad)</li>
+	<li>Tap “Add to Home Screen”</li>
+	<li>Tap “Add” in the upper right corner of the screen</li>
+	</ol>
+	<br/>
+	<strong>Android:</strong><br/>
+	<ol>
+	<li>Go to <a href="http://stoic.wisegrower.com">stoic.wisegrower.com</a></li>
+	<li>Bookmark site.</li>
+	<li>Go to your Bookmarks.</li>
+	<li> Click and hold the bookmark. Dialog will appear, select 'Add to home screen'.</li>
+	</ol>
+	</div>
+	</script>
+
+    <script type="text/template" id="quote-temp">
+         <p class="say" id="q-<%=id%>">"<%=say %>"</p>
+         <p class="who">- <%=who %></p>
+		 <div class="quotefooter">
+		 <span class="icon-who"><img src="img/<%=icon%>"/></span>
+		 <span class="footerfav"><a href="javascript:void(0);" class="makefav" alt="Favorite"><img src="img/heartnb.png"/></a></span>
+		<br style="clear:both"/>
+		 </div>
+    </script>
+	<script type="text/template" id="quotefav-temp">
+         <p class="say" id="q-<%=id%>">"<%=say %>"</p>
+         <p class="who">- <%=who %></p>
+		 <div class="quotefooter">
+		 <span class="icon-who"><img src="img/<%=icon%>"/></span>
+		 <span class="footerfav"><a href="javascript:void(0);" class="removefav" alt="Remove"><img src="img/recycle-full.png"/></a></span>
+		<br style="clear:both"/>
+		 </div>
+    </script>
+
+	<script src="js/bbun.js"></script>
+	<script src="js/quotesfull.js"></script>
+	<script src="js/main.js"></script>
+</html>

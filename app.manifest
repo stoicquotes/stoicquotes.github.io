@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# version 11 
+
+CACHE:
+index.htm
+/css/main.css
+/js/main.js
+/js/bbun.js
+/js/quotesfull.js
+/img/menu.png
+/img/heart.png
+/img/heartnb.png
+/img/reload.png
+/img/recycle-full.png
+/img/epictetus35.jpg
+/img/aurelius35.jpg
+/img/seneca35.jpg
+
+NETWORK:
+http://www.google-analytics.com/ga.js
+http://www.google-analytics.com/__utm.gif
+
+FALLBACK:
+index.htm
+
