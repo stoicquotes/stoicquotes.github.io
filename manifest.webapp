@@ -10,7 +10,7 @@
 	},
 	"developer":{
 		"name":"Ed Mooney",
-		"url":"http://edmooney.com"
+		"url":"http://stoic.wisegrower.com"
 	},
 	"installs_allowed_from":["*"],
 	"default_locale":"en"
