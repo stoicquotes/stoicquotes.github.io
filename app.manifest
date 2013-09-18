@@ -1,8 +1,8 @@
 CACHE MANIFEST
-# version 12 
+# version 13 
 
 CACHE:
-index.htm
+index.html
 /css/main.css
 /js/main.js
 /js/bbun.js
@@ -15,11 +15,13 @@ index.htm
 /img/epictetus35.jpg
 /img/aurelius35.jpg
 /img/seneca35.jpg
+/icons/icon-57.png
+/icons/icon-128.png
 
 NETWORK:
 http://www.google-analytics.com/ga.js
 http://www.google-analytics.com/__utm.gif
 
 FALLBACK:
-index.htm
+index.html
 
