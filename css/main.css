@@ -44,6 +44,7 @@
 	  .icon-who{float:right;margin-right:5px;padding:0px;}
 	  .footerfav{float:left;margin-left:5px;padding:0px;}
       .gen{color:#fff; font-size:22px;text-shadow: 1px 1px 2px #000; margin:0px 8px; background:#333; border:1px #666 solid; margin:20px; padding:10px; text-align:left;}
+      .smaller{font-size:15px;}
 	.gen h3{padding:0px;margin:0px 0px 3px 0px; text-align:center;}
 	.gen p a{color:#fff;}
 	.gen p a.visited{color:#fff;}
